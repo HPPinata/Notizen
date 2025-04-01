@@ -29,7 +29,7 @@ cat update.bash
 chmod +x update.bash
 
 apt install -y cron
-cat <<"EOL" | crontab -
+cat <<EOL | crontab -
 SHELL=/bin/bash
 BASH_ENV=/etc/profile
 
