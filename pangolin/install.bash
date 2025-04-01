@@ -4,7 +4,7 @@ mkdir /var/pangolin
 cd /var/pangolin
 
 apt install -y wget
-wget -O https://raw.githubusercontent.com/HPPinata/Notizen/refs/heads/main/pangolin/dyndns.bash && chmod +x ./dyndns.bash
+wget -O dyndns.bash https://raw.githubusercontent.com/HPPinata/Notizen/refs/heads/main/pangolin/dyndns.bash && chmod +x ./dyndns.bash
 wget -O installer "https://github.com/fosrl/pangolin/releases/latest/download/installer_linux_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')" && chmod +x ./installer
 
 read -p "DynDNS Domain: " ZONE
