@@ -45,7 +45,6 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  services.qemuGuest.enable = true;
 
   system.autoUpgrade = {
     enable = true;
